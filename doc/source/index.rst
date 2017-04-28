@@ -14,7 +14,7 @@ Welcome to Python SDK Contacthub's documentation!
 =================================================
 
 This is the official Python SDK for `ContactHub REST API <https://contactlab.github.io/contacthub-json-schemas/apidoc.html>`_.
-This SDK easily allows to access your data on ContactHub, making the authentication immediate and simplifying reading/writing operations.
+This SDK easily allows to access your data on ContactHub, making the authentication immediate and simplifying read/write operations.
 
 For all information about ContactHub, check `here <http://contactlab.com/en/offer/engagement-marketing-platform/contacthub/>`_.
 
