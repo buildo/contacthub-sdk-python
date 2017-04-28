@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/axant/contacthub-sdk-python.svg?branch=master)](https://travis-ci.org/axant/contacthub-sdk-python) 
-[![Coverage Status](https://coveralls.io/repos/github/axant/contacthub-sdk-python/badge.svg)](https://coveralls.io/github/axant/contacthub-sdk-python)
+[![Build Status](https://travis-ci.org/contactlab/contacthub-sdk-python.svg?branch=master)](https://travis-ci.org/contactlab/contacthub-sdk-python) 
+[![Coverage Status](https://coveralls.io/repos/github/contactlab/contacthub-sdk-python/badge.svg)](https://coveralls.io/github/contactlab/contacthub-sdk-python)
 [![Documentation Status](https://readthedocs.org/projects/contacthub-sdk-python/badge/?version=latest)](http://contacthub-sdk-python.readthedocs.io/en/latest/?badge=latest)
 
 # Contacthub Python SDK

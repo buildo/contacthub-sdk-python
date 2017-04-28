@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: https://travis-ci.org/axant/contacthub-sdk-python.svg?branch=master
+.. image::https://travis-ci.org/contactlab/contacthub-sdk-python.svg?branch=master
     :target: https://travis-ci.org/axant/contacthub-sdk-python
 
-.. image:: https://coveralls.io/repos/github/axant/contacthub-sdk-python/badge.svg?branch=master
-    :target: https://coveralls.io/github/axant/contacthub-sdk-python?branch=master
+.. image:: https://coveralls.io/repos/github/contactlab/contacthub-sdk-python/badge.svg?branch=master
+    :target: https://coveralls.io/github/contactlab/contacthub-sdk-python?branch=master
 
 
 Welcome to Python SDK Contacthub's documentation!
