@@ -1,0 +1,48 @@
+{
+  "elements": [
+    {
+      "id": "0c46f9ca-2fae-4ce2-9cf8-5143061604f5",
+      "customerId": "8b321dce-53c4-4029-8388-1938efa2090c",
+      "bringBackProperties": null,
+      "type": "addedCompare",
+      "context": "IOT",
+      "date": "2017-03-08T10:18:17.000+0000",
+      "properties": {
+        "category": [
+          "category1",
+          "category2"
+        ],
+        "shortDescription": "shortDescription",
+        "extraProperties": {
+          "key": "value"
+        },
+        "classifications": [
+          {
+            "key": "key",
+            "value": "value"
+          }
+        ],
+        "id": "id",
+        "sku": "sku",
+        "name": "name",
+        "price": 100,
+        "imageUrl": "imageUrl",
+        "linkUrl": "linkURL"
+      },
+      "contextInfo": {
+        "client": {
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+          "ip": "172.16.16.1"
+        }
+      },
+      "registeredAt": "2017-03-08T11:41:45.567+0000"
+    }
+  ],
+  "page": {
+    "size": 10,
+    "totalUnfilteredElements": 0,
+    "totalElements": 1,
+    "totalPages": 1,
+    "number": 0
+  }
+}

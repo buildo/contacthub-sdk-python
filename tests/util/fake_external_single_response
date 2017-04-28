@@ -1,0 +1,138 @@
+{
+	"elements": [{
+		"id": "0745ef01-ad77-4662-b3c7-b8513ce94384",
+		"nodeId": "91316725-a4c2-420b-a3f3-2556b3630444",
+		"externalId": "02",
+		"extra": "Ciaasdo",
+		"registeredAt": "2017-03-02T12:12:53.074+0000",
+		"updatedAt": "2017-03-02T12:12:53.074+0000",
+		"enabled": true,
+		"base": {
+			"pictureUrl": "url",
+			"title": "MR",
+			"prefix": "Sir",
+			"firstName": "Marco",
+			"lastName": "Bosio",
+			"middleName": "Ken",
+			"gender": "male",
+			"dob": "2012-04-23",
+			"locale": "de_DE",
+			"timezone": "Africa/Accra",
+			"contacts": {
+				"email": "email@email.it",
+				"fax": "fax",
+				"mobilePhone": "mobilePhone",
+				"phone": "phone",
+				"otherContacts": [{
+					"name": "name",
+					"type": "MOBILE",
+					"value": "value"
+				}, {
+					"name": "Casa di piero",
+					"type": "PHONE",
+					"value": "12343241"
+				}],
+				"mobileDevices": [{
+					"identifier": "identifier",
+					"name": "name",
+					"type": "IOS"
+				}, {
+					"identifier": "BOH2",
+					"name": "Casa di nonna2",
+					"type": "IOS"
+				}]
+			},
+			"address": {
+				"street": "street",
+				"city": "city",
+				"country": "country",
+				"province": "province",
+				"zip": "zip",
+				"geo": {
+					"lat": 123,
+					"lon": 123
+				}
+			},
+			"credential": {
+				"password": "password",
+				"username": "username"
+
+			},
+			"educations": [{
+				"schoolType": "COLLEGE",
+				"schoolName": "schoolName",
+				"schoolConcentration": "schoolConcentration",
+				"startYear": 1994,
+				"endYear": 2000,
+				"isCurrent": true
+			}],
+			"likes": [{
+				"id": "id",
+				"category": "category",
+				"name": "name",
+				"createdTime": "1994-02-11 14:05"
+			}],
+			"socialProfile": {
+				"facebook": "facebook",
+				"google": "google",
+				"instagram": "instagram",
+				"twitter": "twitter",
+				"qzone": "qzone",
+				"linkedin": "linkedin"
+			},
+
+			"jobs": [{
+				"companyIndustry": "companyIndustry",
+				"companyName": "companyName",
+				"jobTitle": "jobTitle",
+				"startDate": "1994-10-06",
+				"endDate": "1994-10-06",
+				"isCurrent": true
+			}],
+			"subscriptions": [{
+				"id": "id",
+				"name": "name",
+				"type": "type",
+				"kind": "SERVICE",
+				"subscribed": true,
+				"startDate": "1994-10-06",
+				"endDate": "1994-10-10",
+				"subscriberId": "subscriberId",
+				"registeredAt": "1994-10-06",
+				"updatedAt": "1994-10-06",
+				"preferences": [{
+					"key": "key",
+					"value": "value"
+
+				}]
+			}]
+
+
+		},
+		"extended": {
+			"prova": {
+				"oggetto": "123",
+				"list": [
+					"oggetto",
+					"prova"
+				]
+			}
+		},
+		"tags": {
+			"auto": [
+				"auto"
+			],
+			"manual": [
+				"manual"
+			]
+		}
+
+	}],
+	"page": {
+		"size": 10,
+		"totalElements": 2,
+		"totalUnfilteredElements": 0,
+		"totalPages": 1,
+		"number": 0
+	}
+}

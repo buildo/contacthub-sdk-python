@@ -1,0 +1,7 @@
+.idea
+*.pyc
+.coverage
+.coveragerc
+doc/build
+build
+dist

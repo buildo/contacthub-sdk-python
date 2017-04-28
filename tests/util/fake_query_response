@@ -1,0 +1,70 @@
+{
+  "elements": [
+    {
+      "id": "8b321dce-53c4-4029-8388-1938efa2090c",
+      "nodeId": "91316725-a4c2-420b-a3f3-2556b3630444",
+      "externalId": "01",
+      "extra": "Ciao",
+      "registeredAt": "2017-02-28T16:02:52.504+0000",
+      "updatedAt": "2017-03-02T17:06:45.962+0000",
+      "enabled": true,
+      "base": {
+        "pictureUrl": null,
+        "title": null,
+        "prefix": null,
+        "firstName": null,
+        "lastName": null,
+        "middleName": null,
+        "gender": null,
+        "dob": "2012-04-23",
+        "locale": null,
+        "timezone": null,
+        "contacts": {
+          "email": "marco.bosio@axant.it",
+          "fax": null,
+          "mobilePhone": "3661107199",
+          "phone": "3498761234",
+          "otherContacts": [],
+          "mobileDevices": [
+            {
+              "identifier": "BOH",
+              "name": "Casa di nonna",
+              "type": "IOS"
+            }
+          ]
+        },
+        "address": null,
+        "credential": null,
+        "educations": [],
+        "likes": [],
+        "socialProfile": null,
+        "jobs": [],
+        "subscriptions": []
+      },
+      "extended": {
+        "prova": {
+          "oggetto": "123",
+          "list": [
+            "oggetto",
+            "prova"
+          ]
+        }
+      },
+      "tags": {
+        "auto": [
+          "prova"
+        ],
+        "manual": [
+          "prova"
+        ]
+      }
+    }
+  ],
+  "page": {
+    "size": 10,
+    "totalElements": 1,
+    "totalUnfilteredElements": 0,
+    "totalPages": 1,
+    "number": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "79d178d4-88a0-4cc9-9c62-907351cc1461",
+  "customerId": "46cf4766-770b-4e2f-b5e2-c82273e45ab9",
+  "bringBackProperties": {
+    "type": "EXTERNAL_ID",
+    "value": "02",
+    "nodeId": "91316725-a4c2-420b-a3f3-2556b3630444"
+  },
+  "type": "viewedProductCategory",
+  "context": "IOT",
+  "date": "2017-04-03T13:47:23.093+0000",
+  "properties": {
+    "category": "category",
+    "extraProperties": {
+      "a": "b"
+    }
+  },
+  "contextInfo": {
+    "client": {
+      "userAgent": "python-requests/2.13.0",
+      "ip": "172.16.16.1"
+    }
+  },
+  "registeredAt": "2017-04-03T13:47:23.103+0000",
+  "tracking": null
+}

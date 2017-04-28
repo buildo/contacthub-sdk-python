@@ -1,0 +1,38 @@
+{
+  "id": "b6023673-b47a-4654-a53c-74bbc0204a20",
+  "nodeId": "91316725-a4c2-420b-a3f3-2556b3630444",
+  "externalId": null,
+  "extra": "extra",
+  "registeredAt": "2017-03-09T11:31:31.842+0000",
+  "updatedAt": "2017-03-09T11:31:31.842+0000",
+  "enabled": true,
+  "base": {
+    "pictureUrl": null,
+    "title": null,
+    "prefix": null,
+    "firstName": null,
+    "lastName": null,
+    "middleName": null,
+    "gender": null,
+    "dob": null,
+    "locale": null,
+    "timezone": null,
+    "contacts": {
+      "email": "email@email.email",
+      "fax": null,
+      "mobilePhone": null,
+      "phone": null,
+      "otherContacts": [],
+      "mobileDevices": []
+    },
+    "address": null,
+    "credential": null,
+    "educations": [],
+    "likes": [],
+    "socialProfile": null,
+    "jobs": [],
+    "subscriptions": []
+  },
+  "extended": null,
+  "tags": {"manual":["manual"], "auto":["auto"]}
+}

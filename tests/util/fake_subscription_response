@@ -1,0 +1,16 @@
+ {
+    "id": "01",
+    "name": "name",
+    "type": "type",
+    "kind": "SERVICE",
+    "subscribed": true,
+    "startDate": "1994-10-06",
+    "endDate":"1994-10-10",
+    "subscriberId": "subscriberId",
+    "preferences": [
+      {
+        "key": "key",
+        "value": "value"
+      }
+    ]
+}

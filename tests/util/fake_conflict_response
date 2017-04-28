@@ -1,0 +1,11 @@
+{
+  "message": "Conflict with exiting customer fa2deda3-6331-43f9-b73c-0e2cabf9b40e",
+  "logref": "5c38ce36-3069-4ad6-9dee-04adc6c483c6",
+  "data": {
+    "customer": {
+      "id": "01",
+      "href": "https://api.contactlab.it/hub/v1/workspaces/0aea7919-57cd-4260-910e-8b1ae53a7259/customers/fa2deda3-6331-43f9-b73c-0e2cabf9b40e"
+    }
+  },
+  "errors": []
+}
