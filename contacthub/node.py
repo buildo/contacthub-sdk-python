@@ -17,13 +17,13 @@ from contacthub.models.subscription import Subscription
 
 class Node(object):
     """
-    Node class for accessing data on a ContactHub node.
+    Node class for accessing data on a Contacthub node.
     """
 
     def __init__(self, workspace, node_id):
         """
-        :param workspace: A Workspace Object for authenticating on ContactHub
-        :param node_id: The id of the ContactHub node
+        :param workspace: A Workspace Object for authenticating on Contacthub
+        :param node_id: The id of the Contacthub node
         """
         self.workspace = workspace
         self.node_id = str(node_id)

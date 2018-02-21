@@ -6,13 +6,13 @@ from contacthub._parsers._config_parser import _GeneralConfigParser
 class Workspace(object):
     """
     Workspace class for authenticating on the specified base url APIs.
-    This class is the first step for accessing the ContactHub APIs, the higher level.
+    This class is the first step for accessing the Contacthub APIs, the higher level.
     """
 
     def __init__(self, workspace_id, token, base_url='https://api.contactlab.it/hub/v1/workspaces'):
         """
-        :param workspace_id: The ID associated at the unique workspace on ContactHub. This parameter is given by ContactHub
-        :param token: Authentication token. This parameter is given by ContactHub
+        :param workspace_id: The ID associated at the unique workspace on Contacthub. This parameter is given by Contacthub
+        :param token: Authentication token. This parameter is given by Contacthub
         :param base_url: Optional base URL for accessing the APIs
         """
         self.workspace_id = str(workspace_id)

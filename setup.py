@@ -19,10 +19,10 @@ testpkgs = [
     "coverage",
     "mock"
 ]
-setup(description='This is the official Python SDK for ContactHub REST API. This SDK easily allows to access your data '
-                  'on ContactHub, making the authentication immediate and simplifying read/write operations.',
-      author='Axant',
-      url='https://github.com/axant/contacthub-sdk-python',
+setup(description='This is the official Python SDK for Contacthub REST API. This SDK easily allows to access your data '
+                  'on Contacthub, making the authentication immediate and simplifying read/write operations.',
+      author='Contactlab',
+      url='https://github.com/contactlab/contacthub-sdk-python',
       version='0.1',
       classifiers=['Intended Audience :: Developers',
                    'Programming Language :: Python',
@@ -39,7 +39,7 @@ setup(description='This is the official Python SDK for ContactHub REST API. This
                    'Development Status :: 5 - Production/Stable'
                    ],
       keywords='web skd api',
-      author_email='tech@axant.it',
+      author_email='developer@contactlab.com',
       install_requires=install_requires,
       packages=find_packages(exclude=['tests', 'tests.*']),
       extras_require={

@@ -80,7 +80,7 @@ class Query(object):
 
     def filter(self, criterion):
         """
-        Create a new API Like query for ContactHub APIs (JSON Format)
+        Create a new API Like query for Contacthub APIs (JSON Format)
 
         :param criterion: the Criterion object for fields for query data
         :return: a Query object containing the JSON object representing a query for the APIs

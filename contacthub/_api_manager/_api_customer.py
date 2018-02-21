@@ -11,7 +11,7 @@ from contacthub.lib.utils import DateEncoder
 
 class _CustomerAPIManager(object):
     """
-    A wrapper for ContactHub API.
+    A wrapper for Contacthub API.
     This is the lowest level for accessing the customer API, use this class for get, put, patch or post data on customer
     entity.
     """
