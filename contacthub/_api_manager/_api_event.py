@@ -10,7 +10,7 @@ from contacthub.errors.api_error import APIError
 
 class _EventAPIManager(object):
     """
-    A wrapper for ContactHub API.
+    A wrapper for Contacthub API.
     This is the lowest level for accessing the event API, use this class for get, put, patch or post data on event
     entity.
     """

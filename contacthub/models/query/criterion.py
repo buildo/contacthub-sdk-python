@@ -12,12 +12,12 @@ class Criterion(object):
       otherwise
 
     This criteria is consumed by a QueryBuilder object for returning a new Query object containing a dictionary
-    representing the query in ContactHub
+    representing the query in Contacthub
     """
 
     class COMPLEX_OPERATORS:
         """
-        List of complex operators handled in ContactHub
+        List of complex operators handled in Contacthub
         """
         AND = 'and'
         OR = 'or'
@@ -25,7 +25,7 @@ class Criterion(object):
 
     class SIMPLE_OPERATORS:
         """
-        List of simple operators handled in ContactHub
+        List of simple operators handled in Contacthub
         """
         EQUALS = 'EQUALS'
         NOT_EQUALS = 'NOT_EQUALS'
