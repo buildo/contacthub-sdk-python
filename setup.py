@@ -23,7 +23,7 @@ setup(description='This is the official Python SDK for Contacthub REST API. This
                   'on Contacthub, making the authentication immediate and simplifying read/write operations.',
       author='Contactlab',
       url='https://github.com/contactlab/contacthub-sdk-python',
-      version='0.1',
+      version='0.2',
       classifiers=['Intended Audience :: Developers',
                    'Programming Language :: Python',
                    'Programming Language :: Python :: 2.6',
