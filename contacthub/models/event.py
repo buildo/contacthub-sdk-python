@@ -101,6 +101,7 @@ class Event(object):
         Choose one of the above  API validated types or add your own in case of new types.
         """
         ABANDONED_CART = "abandonedCart"
+        ABANDONED_SESSION = "abandonedSession"
         ADDED_COMPARE = "addedCompare"
         ADDED_PRODUCT = "addedProduct"
         ADDED_WISH_LIST = "addedWishList"
