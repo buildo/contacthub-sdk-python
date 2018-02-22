@@ -127,8 +127,6 @@ class Customer(with_metaclass(EntityMeta, object)):
                 self.attributes[attr] = val
                 self.mute[attr] = val
 
-    __metaclass__ = EntityMeta
-
     def get_events(self):
         """
         Get all the events associated to this Customer.
