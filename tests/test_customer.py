@@ -310,7 +310,10 @@ class TestCustomer(unittest.TestCase):
     @mock.patch('contacthub._api_manager._api_customer._CustomerAPIManager.post')
     def test_post_customer_creation_first_method(self, mock_post):
         expected_body = {'base': {'contacts': {'email': 'email@email.email'}}, 'extra': 'extra',
-                         'extended': {'prova': 'prova'}, 'tags': {'auto': ['auto'], 'manual': ['manual']}}
+                         'extended': {'prova': 'prova'}, 'tags': {'auto': ['auto'], 'manual': ['manual']},
+                         'consents': {'marketing': {'automatic': {'email':
+                             {'status': True, 'limitation': False, 'objection': False}}}
+                             }}
         mock_post.return_value = json.loads(FakeHTTPResponse(resp_path='tests/util/fake_post_response').text)
         c = Customer(node=self.node,
                      base=Properties(
@@ -322,6 +325,7 @@ class TestCustomer(unittest.TestCase):
         c.extended.prova = 'prova'
         c.tags.auto = ['auto']
         c.tags.manual = ['manual']
+        c.consents = {'marketing': {'automatic': {'email': {'status': True, 'limitation': False, 'objection': False}}}}
 
         c.post()
         mock_post.assert_called_with(body=expected_body, force_update=False)
@@ -343,7 +347,7 @@ class TestCustomer(unittest.TestCase):
     @mock.patch('contacthub._api_manager._api_customer._CustomerAPIManager.post')
     def test_post_customer_creation_second_method(self, mock_post):
         expected_body = {'base': {'contacts': {'email': 'email@email.email'}}, 'extra': 'extra', 'extended': {},
-                         'tags': {'auto': [], 'manual': []}}
+                         'tags': {'auto': [], 'manual': []}, 'consents': {}}
         mock_post.return_value = json.loads(FakeHTTPResponse(resp_path='tests/util/fake_post_response').text)
         c = Customer(node=self.node, base=Properties())
         c.base.contacts = {'email': 'email@email.email'}
@@ -535,5 +539,5 @@ class TestCustomer(unittest.TestCase):
         c.base.timezone = None
         c.put()
         params_expected= {'id':'01', 'base': {'contacts': {}, 'timezone':'Europe/Rome'}, 'extended': {},
-                          'tags':{'manual':[], 'auto':[]}}
+                           'tags':{'manual':[], 'auto':[]}, 'consents':{}}
         mock_put.assert_called_with(self.base_url_customer + '/01', headers=self.headers_expected, json=params_expected)

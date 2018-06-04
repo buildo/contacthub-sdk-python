@@ -33,6 +33,7 @@ class Customer(with_metaclass(EntityMeta, object)):
                     'contacts': {}
                     },
             'extended': {},
+            'consents': {},
             'tags': {
                     'manual': [],
                     'auto': []
@@ -51,6 +52,9 @@ class Customer(with_metaclass(EntityMeta, object)):
 
             if 'extended' not in attributes or attributes['extended'] is None:
                 attributes['extended'] = {}
+
+            if 'consents' not in attributes or attributes['consents'] is None:
+                attributes['consents'] = {}
 
             if 'tags' not in attributes or attributes['tags'] is None:
                 attributes['tags'] = {'auto': [], 'manual': []}

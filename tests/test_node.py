@@ -116,7 +116,7 @@ class TestNode(TestSuite):
         c = Customer(node=self.node, base=Properties(contacts=Properties(email='email')))
         self.node.add_customer(**c.to_dict())
         body = {'nodeId': self.node.node_id, 'base': {'contacts': {'email': 'email'}}, 'extended': {},
-                'tags': {'auto': [], 'manual': []}}
+                'tags': {'auto': [], 'manual': []}, 'consents':{}}
         mock_get.assert_called_with(self.base_url, headers=self.headers_expected, json=body)
 
     @mock.patch('requests.post', return_value=FakeHTTPResponse())
@@ -125,7 +125,7 @@ class TestNode(TestSuite):
         c.extended.prova = 'prova'
         self.node.add_customer(**c.to_dict())
         body = {'nodeId': self.node.node_id, 'base': {'contacts': {'email': 'email'}}, 'extended': {'prova': 'prova'},
-                'tags': {'auto': [], 'manual': []}}
+                'tags': {'auto': [], 'manual': []}, 'consents':{}}
         mock_get.assert_called_with(self.base_url, headers=self.headers_expected, json=body)
 
     @mock.patch('requests.post', return_value=FakeHTTPResponse())
@@ -136,7 +136,7 @@ class TestNode(TestSuite):
         c.tags.manual = ['manual']
         self.node.add_customer(**c.to_dict())
         body = {'nodeId': self.node.node_id, 'base': {'contacts': {'email': 'email'}}, 'extended': {'prova': 'prova'},
-                'tags': {'auto': ['auto'], 'manual': ['manual']}}
+                'tags': {'auto': ['auto'], 'manual': ['manual']}, 'consents':{}}
         mock_get.assert_called_with(self.base_url, headers=self.headers_expected, json=body)
 
     @mock.patch('requests.patch', return_value=FakeHTTPResponse())
@@ -153,7 +153,7 @@ class TestNode(TestSuite):
         c.base.contacts.email = 'email1234'
         self.node.update_customer(full_update=True, **c.to_dict())
         body = {'id': '01', 'base': {'contacts': {'email': 'email1234', 'fax': 'fax'}}, 'extended': {},
-                'tags': {'auto': [], 'manual': []}}
+                'tags': {'auto': [], 'manual': []}, 'consents':{}}
         mock_get.assert_called_with(self.base_url + '/01', headers=self.headers_expected, json=body)
 
     @mock.patch('requests.post',

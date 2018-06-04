@@ -55,6 +55,7 @@ When you declare a new `Customer`, by default its internal structure start with 
             'contacts': {}
             },
     'extended': {},
+    'consents': {},
     'tags': {
             'manual':[],
             'auto':[]
