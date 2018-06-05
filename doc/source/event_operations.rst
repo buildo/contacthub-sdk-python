@@ -46,14 +46,30 @@ Events are also associated to a context of use. The available contexts for an ev
 
 When you create an `Event`, the attributes `type`, `context` and `properties` are required.
 
+For each type of `context`, you can also provide some additional properties in
+the optional `contextInfo` object. The schema for this object varies depending
+on the specified `context`. All the schemas can be found at `this link
+<http://developer.contactlab.com/documentation/contacthub/schemas/index />`_.
+
 Add a new event
 ---------------
 To create a new event, you have to define its schema (according to the specified type) in `Event` class constructor::
 
-    event = Event(node=node, customerId=my_customer.id, type=Event.TYPES.SERVICE_SUBSCRIBED, context=Event.CONTEXTS.WEB,
-                  properties=Properties(
-                  subscriberId='s_id', serviceId='service_id', serviceName='serviceName', startDate=datetime.now(),
-                  extraProperties=Properties(extra='extra')))
+    event = Event(
+        node=node,
+        customerId=my_customer.id,
+        type=Event.TYPES.SERVICE_SUBSCRIBED,
+        context=Event.CONTEXTS.WEB,
+        contextInfo=Properties(
+            client=Properties(
+                ip="127.0.0.1"
+            )
+        )
+        properties=Properties(
+            subscriberId='s_id', serviceId='service_id', serviceName='serviceName', startDate=datetime.now(),
+            extraProperties=Properties(extra='extra')
+        )
+    )
 
 **The attribute `customerId` is required for specifying the customer who will be associated with the event.**
 
