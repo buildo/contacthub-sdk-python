@@ -50,7 +50,7 @@ and converting it to a dictionary::
                 'email': {'status': True, 'limitation': False, 'objection': False}
             }
         }
-    }}
+    }
 
     new_customer = node.add_customer(**post_customer.to_dict())
 

@@ -64,7 +64,7 @@ To create a new event, you have to define its schema (according to the specified
             client=Properties(
                 ip="127.0.0.1"
             )
-        )
+        ),
         properties=Properties(
             subscriberId='s_id', serviceId='service_id', serviceName='serviceName', startDate=datetime.now(),
             extraProperties=Properties(extra='extra')
@@ -118,7 +118,7 @@ ExternalId
 
 In the same way of the Session ID, you can add a new event specifying the external ID of a customer::
 
-    from contacthub.model import Event
+    from contacthub.models import Event
 
     event = Event(node=node, bringBackProperties=Properties(type='externalId', value='e_id'),
     type=Event.TYPES.SERVICE_SUBSCRIBED, context=Event.CONTEXTS.WEB,
