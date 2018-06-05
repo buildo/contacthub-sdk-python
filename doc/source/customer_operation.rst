@@ -19,18 +19,17 @@ method takes as parameter a dictionary containing the structure of your new cust
 object::
 
     customer_structure = {
-                            'externalId': '01',
-                            'extra': 'extra',
-                            'base':
-                                    {
-                                    'timezone': 'Europe/Rome',
-                                    'firstName': 'Bruce',
-                                    'lastName': 'Wayne',
-                                    'contacts': {
-                                                'email': 'email@email.com'
-                                                }
-                                    }
-                            }
+                         'externalId': '01',
+                         'extra': 'extra',
+                         'base': {
+                                 'timezone': 'Europe/Rome',
+                                 'firstName': 'Bruce',
+                                 'lastName': 'Wayne',
+                                 'contacts': {
+                                             'email': 'email@email.com'
+                                             }
+                                 }
+                          }
 
     my_customer = node.add_customer(**customer_structure)
 
@@ -45,6 +44,13 @@ and converting it to a dictionary::
     post_customer.base.contacts.email = 'email@example.com'
     post_customer.extra = 'extra'
     post_customer.extended.my_string = 'my new extended property string'
+    post_customer.consents = {
+        'marketing': {
+            'automatic': {
+                'email': {'status': True, 'limitation': False, 'objection': False}
+            }
+        }
+    }}
 
     new_customer = node.add_customer(**post_customer.to_dict())
 
